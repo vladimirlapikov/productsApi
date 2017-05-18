@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using System.Web.Http;
+using Newtonsoft.Json.Serialization;
 
 namespace ProductsApi
 {
@@ -11,8 +9,7 @@ namespace ProductsApi
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -21,6 +18,10 @@ namespace ProductsApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
         }
     }
 }

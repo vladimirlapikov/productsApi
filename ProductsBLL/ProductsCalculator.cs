@@ -12,16 +12,13 @@ namespace ProductsBLL
     }
 
     public class ProductsCalculator : IProductsCalculator
-    {
+    { 
 
-        private readonly IProductRepository _productRepository;
-        public ProductsCalculator(IProductRepository productRepository)
-        {
-            _productRepository = productRepository;
-        }
+
         public int CountAllProducts()
         {
-            var products = _productRepository.GetAllProductsCount();
+            var productRepository = new ProductRepository();
+            var products = productRepository.GetAllProductsCount();
             return products.Count();
             
         }

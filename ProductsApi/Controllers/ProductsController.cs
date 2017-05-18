@@ -11,14 +11,21 @@ namespace ProductsApi.Controllers
 {
     public class ProductsController : ApiController
     {
+        private readonly IProductsCalculator _productsCalculator;
+        private readonly IProductsLog _productsLog;
 
+        public ProductsController(IProductsCalculator productsCalculator)
+        {
+            _productsCalculator = productsCalculator;
+        }
 
         public int GetProductsCount()
         {
-            var calc = new ProductsCalculator();
-            return calc.CountAllProducts();
+            //var calc = new ProductsCalculator(new ProductRepository());
+            return _productsCalculator.CountAllProducts();
         }
        
+
         public List<Product> GetAllProductsLog(int id)
         {
             int _id = id;
