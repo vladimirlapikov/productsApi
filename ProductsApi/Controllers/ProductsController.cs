@@ -13,6 +13,7 @@ namespace ProductsApi.Controllers
     {
         private readonly IProductsCalculator _productsCalculator;
         private readonly IProductsLog _productsLog;
+        public ProductsController() { }
 
         public ProductsController(IProductsCalculator productsCalculator)
         {
@@ -21,7 +22,6 @@ namespace ProductsApi.Controllers
 
         public int GetProductsCount()
         {
-            //var calc = new ProductsCalculator(new ProductRepository());
             return _productsCalculator.CountAllProducts();
         }
        

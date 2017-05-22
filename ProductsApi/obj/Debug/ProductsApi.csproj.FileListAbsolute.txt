@@ -80,3 +80,7 @@ c:\users\vladimir gold\documents\visual studio 2017\Projects\ProductsApi\Product
 c:\users\vladimir gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\ProductsBLL.pdb
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\EntityFramework.SqlServer.dll
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\EntityFramework.SqlServer.xml
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Core.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Windsor.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Core.xml
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Windsor.xml

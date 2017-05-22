@@ -8,3 +8,7 @@ c:\users\vladimir gold\documents\visual studio 2017\Projects\ProductsApi\Product
 c:\users\vladimir gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\obj\Debug\ProductsBLL.csprojResolveAssemblyReference.cache
 c:\users\vladimir gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\obj\Debug\ProductsBLL.dll
 c:\users\vladimir gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\obj\Debug\ProductsBLL.pdb
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\Castle.Core.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\Castle.Windsor.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\Castle.Core.xml
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\Castle.Windsor.xml
