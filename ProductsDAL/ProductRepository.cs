@@ -7,6 +7,7 @@ namespace ProductsDAL
     {
         IEnumerable<Product> GetAllProductsCount();
         IEnumerable<Product> GetAllProducts();
+        List<Product> GetProductbyId(int id);
     }
 
     public class ProductRepository : IProductRepository
@@ -30,6 +31,18 @@ namespace ProductsDAL
                 return db.Products.ToList();
             }
         }
+
+        public List<Product> GetProductbyId(int id)
+        {
+            using (var db = new ProductsDBEntities())
+            {
+
+                return db.Products.Where(p => p.Id == id).ToList();
+
+            }
+        }
+
+
     }
 }
 

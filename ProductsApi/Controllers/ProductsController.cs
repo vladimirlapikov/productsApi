@@ -9,29 +9,38 @@ using System.Web.Http;
 
 namespace ProductsApi.Controllers
 {
+    [RoutePrefix("api/products")]
     public class ProductsController : ApiController
     {
         private readonly IProductsCalculator _productsCalculator;
         private readonly IProductsLog _productsLog;
         public ProductsController() { }
 
-        public ProductsController(IProductsCalculator productsCalculator)
+        public ProductsController(IProductsCalculator productsCalculator, IProductsLog productsLog)
         {
             _productsCalculator = productsCalculator;
+            _productsLog = productsLog;
         }
 
         public int GetProductsCount()
         {
             return _productsCalculator.CountAllProducts();
         }
-       
 
-        public List<Product> GetAllProductsLog(int id)
+        [Route("details")]
+        public List<Product> GetAllProductsLog()
         {
-            int _id = id;
-            var list = new ProductsLog();
-            return list.LogAllProducts().ToList();
+            
+            return _productsLog.LogAllProducts().ToList();
 
         }
+
+        public List<Product> GetProductbyId(int id)
+        {
+            int _id = id;
+            return _productsLog.LogProductbyId(_id).ToList();
+
+        }
+
     }
 }

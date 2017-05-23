@@ -17,8 +17,8 @@ namespace ProductsApi
             var container = new WindsorContainer();
             container.Kernel.Resolver.AddSubResolver(new ArrayResolver(container.Kernel, true));
 
-            container.Register(Component.For<IProductsCalculator>().ImplementedBy<ProductsCalculator>().LifestyleSingleton());          
-            
+            container.Register(Component.For<IProductsCalculator>().ImplementedBy<ProductsCalculator>().LifestyleSingleton());
+            container.Register(Component.For<IProductsLog>().ImplementedBy<ProductsLog>().LifestyleSingleton());
             container.Register(
                 Classes
                     .FromThisAssembly()
