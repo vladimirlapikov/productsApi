@@ -10,7 +10,7 @@ namespace ProductsBLL
     public interface IProductsLog
     {
         IEnumerable<Product> LogAllProducts();
-        IEnumerable<Product> LogProductbyId(int id);
+        List<Product> LogProductbyId(int id);
 
     }
    public class ProductsLog: IProductsLog
@@ -24,13 +24,14 @@ namespace ProductsBLL
 
         }
 
-        public IEnumerable<Product> LogProductbyId(int id)
+        public List<Product> LogProductbyId(int id)
         {
             var productRepository = new ProductRepository();
             var product = productRepository.GetProductbyId(id);
             return product;
 
         }
+
 
 
     }

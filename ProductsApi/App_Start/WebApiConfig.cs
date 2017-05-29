@@ -19,6 +19,7 @@ namespace ProductsApi
 
             container.Register(Component.For<IProductsCalculator>().ImplementedBy<ProductsCalculator>().LifestyleSingleton());
             container.Register(Component.For<IProductsLog>().ImplementedBy<ProductsLog>().LifestyleSingleton());
+            container.Register(Component.For<IProductCreateUpdate>().ImplementedBy<ProductCreateUpdate>().LifestyleSingleton());
             container.Register(
                 Classes
                     .FromThisAssembly()

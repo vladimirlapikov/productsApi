@@ -8,11 +8,14 @@ namespace ProductsDAL
         IEnumerable<Product> GetAllProductsCount();
         IEnumerable<Product> GetAllProducts();
         List<Product> GetProductbyId(int id);
+        void CreateProduct(Product product);
+        void UpdateProduct(int id, Product product);
+        void DeleteProduct(int id);
     }
 
     public class ProductRepository : IProductRepository
     {
-        //ProductsDBEntities db = new ProductsDBEntities();
+       
 
         public IEnumerable<Product> GetAllProductsCount()
         {
@@ -39,6 +42,37 @@ namespace ProductsDAL
 
                 return db.Products.Where(p => p.Id == id).ToList();
 
+            }
+        }
+
+        public void CreateProduct(Product product)
+        {
+            using (var db = new ProductsDBEntities())
+            {
+                db.Products.Add(product);
+                db.SaveChanges();
+            }
+        }
+
+        public void UpdateProduct(int id,Product product)
+        {
+            using (var db = new ProductsDBEntities())
+            {
+                var entity = db.Products.SingleOrDefault(p => p.Id == id);
+                entity.Name = product.Name;
+                entity.Price = product.Price;
+                entity.Category = product.Category;
+                db.SaveChanges();
+            }
+        }
+
+        public void DeleteProduct(int id)
+        {
+            using (var db = new ProductsDBEntities())
+            {
+                var entity = db.Products.SingleOrDefault(p => p.Id == id);
+                db.Products.Remove(entity);
+                db.SaveChanges();
             }
         }
 

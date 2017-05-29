@@ -12,3 +12,5 @@ C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\Product
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\Castle.Windsor.dll
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\Castle.Core.xml
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\Castle.Windsor.xml
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\log4net.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsBLL\bin\Debug\log4net.xml

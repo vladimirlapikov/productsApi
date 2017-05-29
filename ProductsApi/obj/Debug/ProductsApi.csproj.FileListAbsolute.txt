@@ -84,3 +84,5 @@ C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\Product
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Windsor.dll
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Core.xml
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Windsor.xml
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\log4net.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\log4net.xml
