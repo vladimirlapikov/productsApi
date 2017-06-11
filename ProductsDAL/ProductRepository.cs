@@ -39,7 +39,8 @@ namespace ProductsDAL
         {
             using (var db = new ProductsDBEntities())
             {
-
+                // thats way using sp !!!
+                //var byCat = db.GetProductaByCategory("gghghg");
                 return db.Products.Where(p => p.Id == id).ToList();
 
             }

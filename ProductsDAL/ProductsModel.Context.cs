@@ -12,6 +12,8 @@ namespace ProductsDAL
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class ProductsDBEntities : DbContext
     {
@@ -26,5 +28,15 @@ namespace ProductsDAL
         }
     
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Log> Logs { get; set; }
+    
+        public virtual ObjectResult<GetProductaByCategory_Result> GetProductaByCategory(string category)
+        {
+            var categoryParameter = category != null ?
+                new ObjectParameter("Category", category) :
+                new ObjectParameter("Category", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetProductaByCategory_Result>("GetProductaByCategory", categoryParameter);
+        }
     }
 }
