@@ -86,3 +86,6 @@ C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\Product
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\Castle.Windsor.xml
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\log4net.dll
 C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\log4net.xml
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\System.Web.Cors.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\System.Web.Http.Cors.dll
+C:\Users\Vladimir Gold\documents\visual studio 2017\Projects\ProductsApi\ProductsApi\bin\System.Web.Http.Cors.xml

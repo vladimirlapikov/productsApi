@@ -21,7 +21,6 @@ namespace ProductsBLL
             var productRepository = new ProductRepository();
             var products = productRepository.GetAllProducts();
             return products;
-
         }
 
         public List<Product> LogProductbyId(int id)

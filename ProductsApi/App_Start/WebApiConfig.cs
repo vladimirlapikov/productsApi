@@ -33,7 +33,7 @@ namespace ProductsApi
 
 
 
-
+            config.EnableCors();
             // Web API configuration and services
 
             // Web API routes
